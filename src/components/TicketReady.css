@@ -1,0 +1,93 @@
+.ticket-ready-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #0e2a38;
+  color: #dbe8e8;
+}
+
+.card {
+  background: #103846;
+  border-radius: 20px;
+  padding: 30px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.progress-bar {
+  height: 4px;
+  background: #2c4d5f;
+  border-radius: 2px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progress.complete {
+  width: 100%;
+  background: #00bfa6;
+  height: 100%;
+}
+
+.ticket {
+  display: flex;
+  background: #17414e;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.ticket-details {
+  flex-grow: 1;
+  padding: 10px;
+  color: #dbe8e8;
+}
+
+.ticket-stub {
+  background: #0b1e26;
+  color: #8fb3b3;
+  padding: 10px;
+  text-align: center;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.attendee-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #00bfa6;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  background: #00bfa6;
+  transition: background 0.3s;
+}
+
+.button.back {
+  background: transparent;
+  border: 1px solid #00bfa6;
+  color: #00bfa6;
+}
+
+.button:hover {
+  background: #008c78;
+}

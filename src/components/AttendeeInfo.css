@@ -1,0 +1,122 @@
+/* General Layout */
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00171F;
+  }
+  
+  .card {
+    background-color: #0A2E36;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+    color: #A6E1E1;
+  }
+  
+  /* Header */
+  .card h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .progress-bar {
+    height: 4px;
+    background-color: #00454A;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  .progress {
+    width: 66%;
+    height: 100%;
+    background-color: #00FFD1;
+  }
+  
+  /* Upload Section */
+  .upload-box {
+    background-color: #092831;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border: 2px dashed #00454A;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .upload-box:hover {
+    background-color: #0B3C48;
+  }
+  
+  /* Input Fields */
+  .input-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #fafafa;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #092831;
+    color: #A6E1E1;
+    transition: border 0.3s;
+  }
+  
+  .input-group input:focus,
+  .input-group textarea:focus {
+    outline: none;
+    border: 1px solid #00FFD1;
+  }
+  
+  .input-group textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  /* Buttons */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+  }
+  
+  .button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button.back {
+    background-color: transparent;
+    color: #00FFD1;
+    border: 1px solid #00FFD1;
+  }
+  
+  .button.back:hover {
+    background-color: #00454A;
+  }
+  
+  .button.next {
+    background-color: #00FFD1;
+    color: #00171F;
+  }
+  
+  .button.next:hover {
+    background-color: #00E6B8;
+  }
+  

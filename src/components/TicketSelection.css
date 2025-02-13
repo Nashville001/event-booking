@@ -1,0 +1,222 @@
+/* General Container Styles */
+@import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.min-h-screen {
+  min-height: 100vh;
+}
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.bg-dark {
+  background-color: #00171f;
+}
+.text-light {
+  color: #a6e1e1;
+}
+
+/* Card Styles */
+.card {
+  background-color: #0a2e36;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  color: #a6e1e1;
+
+}
+
+.selection-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.selection-head h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    text-decoration-skip-ink: true;
+    text-underline-offset: auto;
+    font-family: "jejumyeongjo";
+  }
+
+.card .event-card {
+  /* background-color: #092831;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; */
+    /* Section Title */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 24px;
+gap: 8px;
+
+width: 556px;
+height: 200px;
+
+background: radial-gradient(103.64% 57.39% at 14.02% 32.06%, rgba(36, 160, 181, 0.2) 0%, rgba(36, 160, 181, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, rgba(10, 12, 17, 0.1);
+border-width: 0px 2px 2px 2px;
+border-style: solid;
+border-color: #07373F;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+.card .event-card h3 {
+  color: #fafafa;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Road Rage", serif;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: true;
+  text-decoration-thickness: auto;
+}
+
+.card .event-card p {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-decoration-skip-ink: True;
+  color: #fafafa;
+}
+
+.card .event-card p span {
+  text-decoration: underline;
+}
+
+/* Ticket Type Styles */
+.ticket-option {
+  padding: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #092831;
+}
+
+.ticket-option.active {
+  background-color: #007a87;
+  color: #ffffff;
+}
+
+.ticket-option .price-tag {
+  background-color: #0E464F;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  color: #ffffff;
+  width: 80px;
+  display: flex;
+  justify-content: end;
+}
+
+.ticket-option p {
+  font-size: 0.75rem;
+}
+
+/* Dropdown Styles */
+.select-box {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 12px;
+  background-color: #092831;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* Button Styles */
+.btn-link {
+  color: #00ffd1;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.btn-link:hover {
+  color: #007a87;
+}
+
+.btn-primary {
+  background-color: #007a87;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #005f6b;
+}
+.card-select {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 556px;
+}
+.card-select div{
+    width: 242px;
+    gap: 0.5rem;
+}
+.inner-div{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.card-select div span{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    text-decoration-skip-ink: True;
+    color: #fafafa;
+}
+.mb-2{
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    text-decoration-skip-ink: True;
+    color: #fafafa;
+    margin-bottom: 0.5rem;
+}

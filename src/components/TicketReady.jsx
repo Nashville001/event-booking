@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import QRCode from "react-qr-code";
+const QRCode = React.lazy(() => import("react-qr-code"));
 import "./TicketReady.css";
 
 const TicketReady = () => {
@@ -36,7 +36,9 @@ const TicketReady = () => {
         <p>You can download or check your email for a copy</p>
 
         <div className="ticket">
-          <QRCode value="https://techemberfest.com/verify" size={100} />
+          <Suspense fallback={<div>Loading...</div>}>
+            <QRCode value="Your QR Code Value" />
+          </Suspense>
           <div className="ticket-details">
             <h4>{eventName}</h4>
             <p>
@@ -48,11 +50,7 @@ const TicketReady = () => {
           </div>
           <div className="ticket-stub">
             {userImage && (
-              <img
-                src={userImage}
-                alt={userName}
-                className="attendee-image"
-              />
+              <img src={userImage} alt={userName} className="attendee-image" />
             )}
             <span>{eventName}</span>
             <span>User Name: {userName}</span>
